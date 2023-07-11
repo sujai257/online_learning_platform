@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>quiz.signin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/signin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+</head>
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Quizx</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="signup.html">Signup</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+<body class="text-center bg-dark ">
+    <main class="form-signin w-100 m-auto">
+      <form method="post" action="">
+            <h1 class="text-center mb-5 text-white">Sign in</h1>
+            <div class="form-floating mb-4 text-black">
+                <input type="email" id="mail" name="email" class="form-control form-control-lg">
+                <label  for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-4 text-black">
+                <input type="password" id="pass" name="pass" class="form-control form-control-lg">
+                <label  for="floatingInput">Password</label>
+              </div>
+           <input class="mt-2 btn btn-lg btn-warning" type="submit"> </input><br><br>
+            <a href="forgetpassword.html" class="mt-2">Forget Password?</a>
+            <p class=" text-muted mt-3"> Don't already an account?<a href="signup.html"><u>Register here</u></a></p>
+            <p class="mt-3 text-muted">&copy;Quizx.com</p>
+        </form>
+    </main>
+</body>
+</html>     

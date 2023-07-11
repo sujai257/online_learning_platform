@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Quizx.com</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <style>
+    .hero-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+     .card{
+   border:1px solid black;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-auto-rows: auto;
+   grid-gap: 1rem;
+  }
+   #hero-container
+   {
+    overflow: scroll;
+   }
+  </style>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon"  sizes="16x16">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files 
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: Dewi - v4.10.0
+  * Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+ 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+
+  .navbar .dropdown-item i {
+    font-size: 16px;
+    min-width: 22px;
+  }
+  .navbar .dropdown-item .material-icons {
+    font-size: 21px;
+    line-height: 16px;
+    vertical-align: middle;
+    margin-top: -2px;
+  }
+  .navbar .nav-item.open > a, .navbar .nav-item.open > a:hover, .navbar .nav-item.open > a:focus {
+    color: #fff;
+    background: none !important;
+  }
+  .navbar .dropdown-menu {
+    border-radius: 1px;
+    border-color: #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  }
+  .navbar .dropdown-menu a {
+    color: #777 !important;
+    padding: 8px 20px;
+    line-height: normal;
+    font-size: 15px;
+  }
+  .navbar .dropdown-menu a:hover, .navbar .dropdown-menu a:focus {
+    color: #333 !important;
+    background: transparent !important;
+  }
+  .navbar .navbar-nav .active a, .navbar .navbar-nav .active a:hover, .navbar .navbar-nav .active a:focus {
+    color: #fff;
+    text-shadow: 0 0 4px rgba(255,255,255,0.2);
+    background: transparent !important;
+  }
+  .navbar .navbar-nav .user-action {
+    padding: 9px 15px;
+    font-size: 15px;
+  }
+  .navbar .navbar-toggle {
+    border-color: #fff;
+  }
+  .navbar .navbar-toggle .icon-bar {
+    background: #fff;
+  }
+  .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {
+    background: transparent;
+  }
+  .navbar .navbar-nav .open .dropdown-menu {
+    background: #faf7fd;
+    border-radius: 1px;
+    border-color: #faf7fd;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  }
+  .navbar .divider {
+    background-color: #e9ecef !important;
+  }
+  @media (min-width: 1200px){
+    .form-inline .input-group {
+      width: 350px;
+      margin-left: 30px;
+    }
+  }
+  @media (max-width: 1199px){
+    .navbar .navbar-nav > a > i {
+      display: inline-block;			
+      text-align: left;
+      min-width: 30px;
+      position: relative;
+      top: 4px;
+    }
+    .navbar .navbar-collapse {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+    .navbar .navbar-form {
+      border: none;			
+      display: block;
+      margin: 10px 0;
+      padding: 0;
+    }
+    .navbar .navbar-nav {
+      margin: 8px 0;
+    }
+    .navbar .navbar-toggle {
+      margin-right: 0;
+    }
+    .input-group {
+      width: 100%;
+    }
+  }
+  </style>
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">Quizx</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="#hero">Created Quiz</a></li>
+          <li><a class="nav-link scrollto" href="activitycompletedquiz.html">Completed Quiz</a></li>
+         <!--li><a class="nav-link scrollto" href="signin.html">Attended Quiz</a></li>-->
+        <i class="bi bi-list mobile-nav-toggle"></i>
+       <li class="icons dropdown">
+        <li>
+          <div class="nav-item dropdown">
+           <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="assets/img/form-user.png" class="avatar" height="40" width="40" alt="Avatar"> rahul <b class="caret"></b></a>
+            <div class="dropdown-menu">
+            <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></a>
+            <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
+            <div class="dropdown-divider"></div>
+            <a href="index.html" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></a>
+            </div>
+       <!--<a href="index.html"><img src="assets/img/form-user.png" height="40" width="40" alt=""></a>--> 
+          </div>
+       </li>
+  </li>
+</ul>
+</nav><!-- .navbar -->
+</div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
+        <div class="card" style="width: 18rem;">
+          <img src="assets/img/quizimg1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Maths</h5>
+            <p class="card-text">Algebra ,matrices ,differential and calculas.</p>
+          </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/quizimg1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Maths</h5>
+              <p class="card-text">Algebra ,matrices ,differential and calculas.</p>
+              
+            </div>  
+         </div>
+
+         <div class="card" style="width: 18rem;">
+          <img src="assets/img/quizimg1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Maths</h5>
+            <p class="card-text">Algebra ,matrices ,differential and calculas.</p>
+
+          </div>
+       </div>
+    </div>
+  </section> 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Template Main JS File -->
+  <script src="plugins/common/common.min.js"></script>
+  <script src="js/custom.min.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/gleek.js"></script>
+  <script src="js/styleSwitcher.js"></script>
+  <!-- Chartjs -->
+  <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
+  <!-- Circle progress -->
+  <script src="./plugins/circle-progress/circle-progress.min.js"></script>
+  <!-- Datamap -->
+  <script src="./plugins/d3v3/index.js"></script>
+  <script src="./plugins/topojson/topojson.min.js"></script>
+  <script src="./plugins/datamaps/datamaps.world.min.js"></script>
+  <!-- Morrisjs -->
+  <script src="./plugins/raphael/raphael.min.js"></script>
+  <script src="./plugins/morris/morris.min.js"></script>
+  <!-- Pignose Calender -->
+  <script src="./plugins/moment/moment.min.js"></script>
+  <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+  <!-- ChartistJS -->
+  <script src="./plugins/chartist/js/chartist.min.js"></script>
+  <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+  <script src="assets/js/dashboard-1.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
