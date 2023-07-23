@@ -5,7 +5,6 @@ app = Flask(__name__)
 app.config['MONGO_URI'] = 'mongodb://localhost:27017/mydatabase'  # Replace with your MongoDB connection string
 mongo = PyMongo(app)
 @app.route('/')
-
 def index():
     return render_template('index.html')
 @app.route('/signup', methods=['GET', 'POST'])
